@@ -1,0 +1,9 @@
+<div class="row g-0">
+    <div class="col-md-5">
+        <app-recipe-list (recipeData)="recipeDataAdded($event)"></app-recipe-list>
+    </div>
+    <div class="col-md-6 ms-md-5">
+        <h2 *ngIf="selectedRecipeData ===''"> {{emptyMessage}} </h2>
+        <app-recipe-details [recipeDetails]="selectedRecipeData"></app-recipe-details>
+    </div>
+</div>

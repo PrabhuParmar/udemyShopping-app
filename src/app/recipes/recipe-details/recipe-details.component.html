@@ -1,0 +1,33 @@
+<div class="recipe-main-section" *ngIf="recipeDetails !=='' ">
+
+    <div class="row">
+        <div class="col recipe-img-content">
+            <img src={{recipeDetails.imagePath}} alt="" class="recipe-img">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col recipe-details-title">
+            <h1>{{recipeDetails.name}} </h1>
+        </div>
+    </div>
+    <div class="row manage-recipe-dropdown">
+        <div class="col">
+            <div class="dropdown me-4">
+                <a class=" dropdown-toggle nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Manage Recipe
+                </a>
+                <ul class="dropdown-menu ">
+                    <li><a class="dropdown-item" href="#">To Shoping List</a></li>
+                    <li><a class="dropdown-item" href="#">Edit Recipe</a></li>
+                    <li><a class="dropdown-item" href="#">Delete Recipe</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row recipe-description">
+        <div class="col">
+            <p> {{recipeDetails.description}} </p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="shopping-list-edit-section row g-0 mb-2">
+    <div class="shoping-list-form col-12">
+        <div class="shoping-list-input row g-0">
+            <div class="col-sm-5 me-sm-4">
+                <label>Name</label>
+                <input class="form-control" type="text" value="" [(ngModel)]="name">
+            </div>
+            <div class="col-sm-2">
+                <label>Amount</label>
+                <input class="form-control" type="number" value='' [(ngModel)]="amount">
+            </div>
+            <div class="my-4">
+                <button class="btn btn-success" (click)="addProduct()">Add</button>
+                <button class="btn btn-danger mx-2">Delete</button>
+                <button class="btn btn-primary">Clear</button>
+            </div>
+        </div>
+    </div>
+</div>

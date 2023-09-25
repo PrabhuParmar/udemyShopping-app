@@ -1,0 +1,8 @@
+<div class="shopping-list-section">
+    <app-shopping-list-edit (createProductData)="productDataAdded($event)"></app-shopping-list-edit>
+    <div class="shopping-list-container" *ngFor="let product of productData">
+        <ul class="list-group mb-2">
+            <li class="list-group-item"> {{product.name}} ( {{product.amount}} ) </li>
+        </ul>
+    </div>
+</div>

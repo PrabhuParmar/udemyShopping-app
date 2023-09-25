@@ -1,0 +1,36 @@
+.recipe-item-card-section .recipe-item-data {
+    height: fit-content;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    max-width: 430px;
+    padding: 10px;
+}
+
+.recipe-item-card-section .recipe-item-data .recipe-text-info-section .recipe-title {
+    font-size: 20px;
+    margin: 0;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.recipe-item-card-section .recipe-item-data .recipe-text-info-section .recipe-description {
+    margin: 0;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.recipe-item-card-section .recipe-item-data .recipe-img-section .recipe-img {
+    height: 60px;
+    width: 60px;
+    margin-left: 10px;
+    /* border-radius: 50%; */
+}
+
+@media screen and (max-width:767.98px) {
+    .recipe-item-card-section .recipe-item-data {
+        max-width: none;
+    }
+}

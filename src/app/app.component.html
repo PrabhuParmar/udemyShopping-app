@@ -1,0 +1,5 @@
+<app-header (selectFeature)="featureNavigation($event)"></app-header>
+<div class=" mx-0 mx-sm-5 mt-4">
+    <app-recipes *ngIf="loadNavigation === 'recipes'"></app-recipes>
+    <app-shopping-list *ngIf="loadNavigation === 'shopping-list'"></app-shopping-list>
+</div>
